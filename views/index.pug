@@ -1,0 +1,52 @@
+doctype html
+html
+  head
+    style
+      include ../static/style.css
+  body
+    nav#navbar
+         ul
+            div#logo 
+                img(src="/static/img/log.jpg")
+                | HDA
+            li #[a(href="/") home] 
+            li #[a(href="/") about] 
+            li #[a(href="/") services]
+            li #[a(href="/") class info] 
+            li #[a(href="/") contact us]
+    section#introsection 
+       div welcome to harry's dance academy 
+       div.small eat sleep dance repeat
+    section#missionsection 
+       h2 our mission
+       div.card 
+            h3 dance perfection
+            div.card-box  
+                div.card-img 
+                   img(src="/static/img/logo.jpg")
+                div.card-content 
+                  p this is the best dance academy of the india   
+       div.card 
+            h3 dance the way you like
+            div.card-box  
+                div.card-img 
+                   img(src="/static/img/man.jpg")
+                div.card-content 
+                  p this is the best dance academy of the india 
+       div.card 
+            h3 expert teaching  
+            div.card-box  
+                div.card-img 
+                   img(src="/static/img/log.jpg")
+                div.card-content 
+                  p this is the best dance academy of the india          
+    section#sponsorssection 
+       h2 our sponsors
+       div#sponsors 
+           img(src="/static/img/sp.png",alt="sponsor image",class="spimage")
+           img(src="/static/img/spon.png",alt="sponsor image",class="spimage")
+           img(src="/static/img/spons.jpeg",alt="sponsor image",class="spimage")
+    footer#footer 
+       | copyright @ 2019 harrydanceacademy.com | all right reserved            
+    script
+      include ../static/index.js
